@@ -71,6 +71,10 @@ void printstu2(struct Student* p)
 	p->age = 20;
 	cout << "姓名：" << p->name << "\t年龄：" << p->age << "\t分数：" << p->score << endl;
 }
+
+//结构体中const使用场景
+//用const来防止误操作
+
 int main()
 {
 	//2.通过学生类型创建具体学生
