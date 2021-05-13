@@ -73,8 +73,6 @@ void printstu2(struct Student* p)
 }
 
 
-//结构体中const使用场景
-
 int main()
 {
 	//2.通过学生类型创建具体学生
@@ -140,7 +138,6 @@ int main()
 	cout << "姓名：" << stu1.name << "\t年龄：" << stu1.age << "\t分数：" << stu1.score << endl;
 	printstu2(&stu1);
 
-	//
 	system("pause");
 	return 0;
 }
