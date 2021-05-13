@@ -31,7 +31,7 @@ struct Student
 
 //结构体数组
 //将自定义的结构体放入到数组中方便维护
-//struct 结构体名 数组名{元素个数} = {{},{},...{}};
+//struct 结构体名 数组名[元素个数] = {{},{},...{}};
 
 //1.定义结构体
 //2.创建结构体数组
@@ -74,8 +74,13 @@ void printstu2(struct Student* p)
 
 //结构体中const使用场景
 //用const来防止误操作
-
-int main()
+//将函数中形参改为指针，可以减少内存空间，而不会复制新的副本
+void printStudents(const Student * s)
+{
+	//s->age = 150; 相当于常量指针//加入const之后，一旦有修改的操作就会报错，可以防止我们的误操作
+	cout << "姓名：" << s->name << "\t年龄：" << s->age << "\t分数：" << s->score << endl;
+}
+int main15()
 {
 	//2.通过学生类型创建具体学生
 	// 创建结构体变量时 struct 可以省略；定义时不能省
@@ -139,6 +144,8 @@ int main()
 	printstu1(stu1);
 	cout << "姓名：" << stu1.name << "\t年龄：" << stu1.age << "\t分数：" << stu1.score << endl;
 	printstu2(&stu1);
+
+	printStudents(&stu1);
 	system("pause");
 	return 0;
 }
