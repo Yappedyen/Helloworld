@@ -153,6 +153,8 @@
     <ClCompile Include="13function.cpp" />
     <ClCompile Include="14pointer.cpp" />
     <ClCompile Include="15struct.cpp" />
+    <ClCompile Include="16struct_example1.cpp" />
+    <ClCompile Include="16struct_example2.cpp" />
     <ClCompile Include="swap.cpp" />
   </ItemGroup>
   <ItemGroup>

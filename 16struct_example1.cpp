@@ -46,7 +46,7 @@ void printinfo(struct Teacher tarr[], int len)
 		}
 	}
 }
-int main()
+int main16()
 {
 	srand((unsigned int)time(NULL));
 	//1.创建3名老师的数组

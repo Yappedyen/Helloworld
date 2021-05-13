@@ -60,6 +60,12 @@
     <ClCompile Include="15struct.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="16struct_example1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="16struct_example2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="swap.h">
