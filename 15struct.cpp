@@ -71,8 +71,6 @@ void printstu2(struct Student* p)
 	p->age = 20;
 	cout << "姓名：" << p->name << "\t年龄：" << p->age << "\t分数：" << p->score << endl;
 }
-
-
 int main()
 {
 	//2.通过学生类型创建具体学生
@@ -137,7 +135,6 @@ int main()
 	printstu1(stu1);
 	cout << "姓名：" << stu1.name << "\t年龄：" << stu1.age << "\t分数：" << stu1.score << endl;
 	printstu2(&stu1);
-
 	system("pause");
 	return 0;
 }
